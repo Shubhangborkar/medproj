@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+  <title>MED APP</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+  <script src="bower_components/angular/angular.js"></script>
+  <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"--></script>
+  <script href="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WebSite Name</a>
+    </div>
+    <div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Login <span class="glyphicon glyphicon-log-in"></span></a>
+          <div class="dropdown-menu">
+            <form id="formLogin" class="form container-fluid">
+              <div class="form-group">
+                <label for="usr">Name:</label>
+                <input type="text" class="form-control" id="usr">
+              </div>
+              <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd">
+              </div>
+              <button type="button" id="btnLogin" class="btn btn-block">Login</button>
+            </form>
+            <div class="container-fluid">
+              <br>
+              <a class="small" href="#">Forgot password?</a>
+            </div> 
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+ 
+<div class="jumbotron text-center">
+  <h1>Home Page</h1>
+ 
+</div>
+ 
+<div class="container">
+  <div class="row">
+<div class="col-sm-6">
+
+
+<h2>About the App</h2>
+<p>Description of the app</p>
+
+<a href="med_ui_mainApp.html" class="btn btn-primary">Enter symptoms</a>
+
+</div>
+<div class="col-sm-6">
+
+<h2>Sign Up</h2>
+<p>Benifits of signing up</p>
+
+   
+          <form class="form-horizontal" action="" method="POST">
+          <fieldset>
+                  
+            <div class="control-group">
+              <label class="control-label" for="email">E-mail</label>
+              <div class="controls">
+                <input id="email" name="email" placeholder="" class="form-control input-lg" type="email">
+               
+              </div>
+            </div>
+         
+            <div class="control-group">
+              <label class="control-label" for="password">Password</label>
+              <div class="controls">
+                <input id="password" name="password" placeholder="" class="form-control input-lg" type="password">
+               
+              </div>
+            </div>
+         
+            <div class="control-group">
+              <label class="control-label" for="password_confirm">Password (Confirm)</label>
+              <div class="controls">
+                <input id="password_confirm" name="password_confirm" placeholder="" class="form-control input-lg" type="password">
+              </div>
+            </div>
+         
+            <div class="control-group">
+              <!-- Button -->
+              <div class="controls">
+                <button class="btn btn-success">Register</button>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+    
+
+
+
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
+
